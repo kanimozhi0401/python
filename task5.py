@@ -1,5 +1,13 @@
-fahrenheit = float(input("Enter Fahrenheit: "))
 
-celsius = (fahrenheit - 32) * 5 / 9
 
-print("Celsius =", celsius)
+
+name = input("Enter your name: ")
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+total = num1 + num2
+
+print("Hello", name)
+print("Sum is:", total)
+print("Length of name:", len(name))
