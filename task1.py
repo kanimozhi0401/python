@@ -1,5 +1,5 @@
-fahrenheit = float(input("Enter Fahrenheit: "))
+name = input("Enter your name: ")
+city = input("Enter your city: ")
 
-celsius = (fahrenheit - 32) * 5 / 9
-
-print("Celsius =", celsius)
+print("Hello", name)
+print("Welcome to", city)
