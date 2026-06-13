@@ -1,0 +1,100 @@
+#task 1
+name = input("Enter Name: ")
+age = int(input("Enter Age: "))
+
+if age < 13:
+    ticket = "Child Ticket"
+elif age < 60:
+    ticket = "Adult Ticket"
+else:
+    ticket = "Senior Citizen Ticket"
+
+print("Hello", name)
+print("Ticket Type:", ticket)
+
+
+#task 2
+temp = float(input("Enter Temperature: "))
+
+if temp < 20:
+    print("Weather: Cold")
+elif temp <= 30:
+    print("Weather: Pleasant")
+else:
+    print("Weather: Hot")
+
+
+#task 3
+name = input("Enter Employee Name: ")
+salary = float(input("Enter Salary: "))
+experience = int(input("Enter Years of Experience: "))
+
+if salary >= 50000 and experience >= 5:
+    bonus_percent = 20
+elif salary >= 30000 and experience >= 3:
+    bonus_percent = 10
+else:
+    bonus_percent = 5
+
+bonus_amount = salary * bonus_percent / 100
+final_salary = salary + bonus_amount
+
+print("Employee Name:", name)
+print("Bonus Amount:", bonus_amount)
+print("Final Salary:", final_salary)
+
+
+#task 4
+
+percentage = float(input("Enter Percentage: "))
+score = float(input("Enter Exam Score: "))
+
+if percentage >= 70 and score >= 80:
+    print("Admission Confirmed")
+elif percentage >= 60 and score >= 60:
+    print("Waiting List")
+else:
+    print("Rejected")
+
+
+#task 5
+
+name = input("Enter Customer Name: ")
+units = int(input("Enter Units Consumed: "))
+
+if units <= 100:
+    bill = units * 2
+elif units <= 300:
+    bill = units * 4
+else:
+    bill = units * 6
+
+if bill > 1000:
+    discount = bill * 0.10
+else:
+    discount = 0
+
+final_amount = bill - discount
+
+print("Customer Name:", name)
+print("Bill Amount:", bill)
+print("Discount:", discount)
+print("Final Amount:", final_amount)
+
+#task6
+
+age = int(input("Enter Age: "))
+salary = float(input("Enter Monthly Salary: "))
+experience = int(input("Enter Years of Experience: "))
+loan = input("Existing Loan (y/n): ").lower()
+
+if age < 21:
+    print("Loan Rejected: Under age")
+elif salary < 30000:
+    print("Loan Rejected: Salary too low")
+elif experience < 2:
+    print("Loan Rejected: Insufficient experience")
+elif loan == "y":
+    print("Loan Rejected: Existing loan found")
+else:
+    print("Loan Approved")
